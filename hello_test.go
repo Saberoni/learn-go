@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand"
 	"testing"
 )
@@ -53,4 +54,10 @@ func TestHello(t *testing.T) {
 		want := "Hola, " + name
 		assetCorrectMessage(t, got, want)
 	})
+}
+
+func ExampleHello() {
+	res := Hello("Sabastian", "")
+	fmt.Println(res)
+	// Output: Hello, Sabastian
 }
